@@ -1,0 +1,175 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Azul escuro moderno */
+    color: #f8fafc;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 2px solid #38bdf8;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #38bdf8; /* Efeito Hover */
+}
+
+/* Banner Principal */
+.banner {
+    background-linear-gradient: rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #94a3b8;
+}
+
+/* Botão Estilizado */
+.btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-3px); /* Pequena animação ao passar o mouse */
+}
+
+/* Seção de Conteúdo (Cards) */
+main {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+main h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #38bdf8;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Garante que quebre linha em telas menores (Responsivo) */
+}
+
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    width: 320px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    border-color: #38bdf8;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 20px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.card p {
+    padding: 0 20px 20px 20px;
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card-link {
+    display: inline-block;
+    padding: 0 20px 20px 20px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0b0f19;
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+}
